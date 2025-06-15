@@ -1,10 +1,10 @@
 import { MaterialIcons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import {
-    RefreshControl,
-    ScrollView,
-    TouchableOpacity,
-    View,
+  RefreshControl,
+  ScrollView,
+  TouchableOpacity,
+  View,
 } from "react-native";
 
 import { SafeAreaView } from "@/components/safe-area-view";
@@ -217,23 +217,6 @@ export default function Dashboard() {
 									<MaterialIcons name="add" size={24} color="white" />
 									<Text className="text-white font-semibold text-base">
 										Nova Ferramenta
-									</Text>
-								</View>
-							</Button>
-							<Button
-								variant="secondary"
-								size="default"
-								onPress={() => router.push("/(protected)/modal")}
-								className="w-full"
-							>
-								<View className="flex-row items-center justify-center gap-3">
-									<MaterialIcons
-										name="qr-code-scanner"
-										size={24}
-										color="#6b7280"
-									/>
-									<Text className="text-secondary-foreground font-semibold text-base">
-										Escanear QR
 									</Text>
 								</View>
 							</Button>
