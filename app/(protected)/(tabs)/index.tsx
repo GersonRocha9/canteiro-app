@@ -210,7 +210,7 @@ export default function Dashboard() {
 							<Button
 								variant="default"
 								size="default"
-								onPress={() => router.push("/(protected)/(tabs)/add-tool")}
+								onPress={() => router.push("/(protected)/add-tool")}
 								className="w-full"
 							>
 								<View className="flex-row items-center justify-center gap-3">

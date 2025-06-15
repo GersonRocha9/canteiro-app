@@ -333,7 +333,7 @@ export default function ToolsScreen() {
 							{!searchQuery && activeFilter === "all" && (
 								<Button
 									className="mt-6"
-									onPress={() => router.push("/(protected)/(tabs)/add-tool")}
+									onPress={() => router.push("/(protected)/add-tool")}
 								>
 									<Text className="text-primary-foreground font-semibold">
 										Cadastrar Ferramenta
@@ -346,7 +346,7 @@ export default function ToolsScreen() {
 
 				{/* Add Tool FAB */}
 				<TouchableOpacity
-					onPress={() => router.push("/(protected)/(tabs)/add-tool")}
+					onPress={() => router.push("/(protected)/add-tool")}
 					className="absolute bottom-6 right-6 w-14 h-14 bg-primary rounded-full items-center justify-center shadow-lg"
 					style={{ elevation: 5 }}
 				>

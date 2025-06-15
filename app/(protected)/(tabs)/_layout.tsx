@@ -57,16 +57,6 @@ export default function TabsLayout() {
 			/>
 
 			<Tabs.Screen
-				name="add-tool"
-				options={{
-					title: "Adicionar",
-					tabBarIcon: ({ color, size }) => (
-						<MaterialIcons name="add-circle" color={color} size={size} />
-					),
-				}}
-			/>
-
-			<Tabs.Screen
 				name="profile"
 				options={{
 					title: "Perfil",

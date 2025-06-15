@@ -105,8 +105,8 @@ canteiro-app/
 │   │   ├── (tabs)/              # Navegação por abas
 │   │   │   ├── index.tsx        # Dashboard
 │   │   │   ├── tools.tsx        # Listagem de ferramentas
-│   │   │   ├── add-tool.tsx     # Cadastro de ferramentas
 │   │   │   └── profile.tsx      # Perfil do usuário
+│   │   ├── add-tool.tsx         # Cadastro de ferramentas
 │   │   ├── activities.tsx       # Atividades recentes
 │   │   ├── tool-details.tsx     # Detalhes da ferramenta
 │   │   └── modal.tsx           # Tela modal
