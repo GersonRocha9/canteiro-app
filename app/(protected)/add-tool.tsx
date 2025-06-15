@@ -24,20 +24,9 @@ const formSchema = z.object({
 		.max(500, "A descrição deve ter menos de 500 caracteres."),
 	serialNumber: z
 		.string()
-		.min(3, "O número de série deve ter pelo menos 3 caracteres.")
-		.max(50, "O número de série deve ter menos de 50 caracteres.")
-		.optional()
-		.or(z.literal("")),
-	brand: z
-		.string()
-		.max(50, "A marca deve ter menos de 50 caracteres.")
-		.optional()
-		.or(z.literal("")),
-	model: z
-		.string()
-		.max(50, "O modelo deve ter menos de 50 caracteres.")
-		.optional()
-		.or(z.literal("")),
+		.max(50, "O número de série deve ter menos de 50 caracteres."),
+	brand: z.string().max(50, "A marca deve ter menos de 50 caracteres."),
+	model: z.string().max(50, "O modelo deve ter menos de 50 caracteres."),
 	location: z
 		.string()
 		.min(2, "A localização deve ter pelo menos 2 caracteres.")
@@ -48,16 +37,16 @@ const formSchema = z.object({
 		.max(50, "A categoria deve ter menos de 50 caracteres."),
 	observations: z
 		.string()
-		.max(1000, "As observações devem ter menos de 1000 caracteres.")
-		.optional()
-		.or(z.literal("")),
+		.max(1000, "As observações devem ter menos de 1000 caracteres."),
 });
+
+type FormData = z.infer<typeof formSchema>;
 
 export default function AddTool() {
 	const { createTool } = useTools();
 	const { profile } = useProfile();
 
-	const form = useForm<z.infer<typeof formSchema>>({
+	const form = useForm<FormData>({
 		resolver: zodResolver(formSchema),
 		defaultValues: {
 			name: "",
@@ -71,7 +60,7 @@ export default function AddTool() {
 		},
 	});
 
-	async function onSubmit(data: z.infer<typeof formSchema>) {
+	async function onSubmit(data: FormData) {
 		if (!profile?.company_id || !profile?.id) {
 			Alert.alert("Erro", "Perfil de usuário não encontrado.");
 			return;

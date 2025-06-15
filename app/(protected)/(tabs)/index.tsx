@@ -1,10 +1,10 @@
 import { MaterialIcons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import {
-  RefreshControl,
-  ScrollView,
-  TouchableOpacity,
-  View,
+	RefreshControl,
+	ScrollView,
+	TouchableOpacity,
+	View,
 } from "react-native";
 
 import { SafeAreaView } from "@/components/safe-area-view";

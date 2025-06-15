@@ -1,9 +1,9 @@
 import { supabase } from "@/config/supabase";
 import {
-    InsertTables,
-    ToolStatus,
-    ToolWithRelations,
-    UpdateTables
+	InsertTables,
+	ToolStatus,
+	ToolWithRelations,
+	UpdateTables,
 } from "@/types/database.types";
 import { useCallback, useEffect, useState } from "react";
 

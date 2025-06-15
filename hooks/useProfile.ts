@@ -1,9 +1,6 @@
 import { supabase } from "@/config/supabase";
 import { useAuth } from "@/context/supabase-provider";
-import {
-    ProfileWithRelations,
-    UpdateTables
-} from "@/types/database.types";
+import { ProfileWithRelations, UpdateTables } from "@/types/database.types";
 import { useCallback, useEffect, useState } from "react";
 
 export function useProfile() {

@@ -1,10 +1,10 @@
 import { SplashScreen, useRouter } from "expo-router";
 import {
-  createContext,
-  PropsWithChildren,
-  useContext,
-  useEffect,
-  useState,
+	createContext,
+	PropsWithChildren,
+	useContext,
+	useEffect,
+	useState,
 } from "react";
 
 import { Session } from "@supabase/supabase-js";

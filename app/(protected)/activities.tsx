@@ -2,11 +2,11 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import { useMemo, useState } from "react";
 import {
-  RefreshControl,
-  ScrollView,
-  TextInput,
-  TouchableOpacity,
-  View,
+	RefreshControl,
+	ScrollView,
+	TextInput,
+	TouchableOpacity,
+	View,
 } from "react-native";
 
 import { SafeAreaView } from "@/components/safe-area-view";
@@ -128,7 +128,7 @@ function ActivityItem({ activity, onPress }: ActivityItemProps) {
 
 					{activity.notes && (
 						<Text className="text-xs text-muted-foreground mb-2 italic">
-							"{activity.notes}"
+							&quot;{activity.notes}&quot;
 						</Text>
 					)}
 

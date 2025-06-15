@@ -1,7 +1,7 @@
 import { supabase } from "@/config/supabase";
 import {
-  DashboardStats,
-  ToolMovementWithRelations,
+	DashboardStats,
+	ToolMovementWithRelations,
 } from "@/types/database.types";
 import { useCallback, useEffect, useState } from "react";
 
