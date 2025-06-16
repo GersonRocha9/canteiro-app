@@ -68,7 +68,7 @@ function FilterChip({ label, count, active, onPress }: FilterChipProps) {
 	return (
 		<TouchableOpacity
 			onPress={onPress}
-			className={`px-4 py-2 rounded-full border flex-row items-center gap-2 min-w-0 ${
+			className={`px-4 py-2 mr-2 rounded-full border flex-row items-center gap-2 min-w-0 ${
 				active ? "bg-primary border-primary" : "bg-card border-border"
 			}`}
 		>
