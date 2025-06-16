@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "ExpoSupabaseStarter",
-    "slug": "ExpoSupabaseStarter",
-    "scheme": "expo-supabase-starter",
+    "name": "Canteiro",
+    "slug": "canteiro",
+    "scheme": "canteiro",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -30,7 +30,7 @@
         "dark": "./assets/icon-dark.png",
         "light": "./assets/icon.png"
       },
-      "bundleIdentifier": "com.gersonrocha.exposupabasetemplate"
+      "bundleIdentifier": "com.gersonrocha.canteiro"
     },
     "android": {
       "adaptiveIcon": {
@@ -46,7 +46,7 @@
           "image": "./assets/splash-dark.png"
         }
       },
-      "package": "com.gersonrocha.exposupabasetemplate"
+      "package": "com.gersonrocha.canteiro"
     },
     "experiments": {
       "typedRoutes": true

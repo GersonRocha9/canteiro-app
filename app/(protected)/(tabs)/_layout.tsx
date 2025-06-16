@@ -18,9 +18,10 @@ export default function TabsLayout() {
 							: colors.light.background,
 					borderTopColor:
 						colorScheme === "dark" ? colors.dark.border : colors.light.border,
-					paddingTop: 8,
-					paddingBottom: 8,
-					height: 80,
+					paddingTop: 16,
+					paddingBottom: 16,
+					height: 100,
+					borderTopWidth: 1,
 				},
 				tabBarActiveTintColor:
 					colorScheme === "dark" ? colors.dark.primary : colors.light.primary,
